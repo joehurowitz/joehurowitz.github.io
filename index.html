@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>bootstrap homework</title>
+
+<style>
+  h1,
+ h2,
+ h3 {
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   font-weight: 700;
+   color: #4aaaa5;
+ } 
+
+.social{
+  margin-top: 8px;
+   margin-right: 5px;
+   width: 62px;
+   height: 62px;
+}
+
+.col-md-4 h2 {
+  margin-bottom: 15px;
+   padding-bottom: 20px;
+   line-height: 22px;
+   border-bottom: 2px solid #eee;
+  
+}
+
+.centerImage
+{
+text-align:center;
+display:block;
+margin:auto;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body background="assets/images/joe-landscape.jpg">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="border: 1px solid #ddd;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"  style="width: 250px; height:90px; background:#798d8c; text-align: center; color: #fff; font-family: 'Georgia',Times,Times New Roman, serif; font-size: 30px; font-weight: 500; line-height: 50px;" href="index.html">Joe Hurowitz</a>
+    </div>
+
+
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		<ul class="nav navbar-nav navbar-right">
+      	<li><a href="index.html" style="font-size: 18px;">About</a></li>
+        <li><a href="portfolio.html" style="font-size: 18px;">Portfolio</a></li>
+        <li><a href="contact.html" style="font-size: 18px;" >Contact</a></li>
+        <li><a id="myButton" style="font-size: 18px;">Music</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+
+	<div class="row">
+				
+		<div class="col-md-8" style="padding:30px;">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title" style= "color: #798d8c;font-family: 'Georgia',Times,Times New Roman, serif; font-size: 30px; font-weight: 500; line-height: 50px;">About Me</h1>
+          </div>
+
+          <div class="panel-body" style="text-align: center;">
+
+          <hr style="border-width: 2px;">
+              
+             <img src="assets/images/joe-landscape.jpg" class="centerImage" height="200" width="685" alt="Your Name">
+             
+
+           <p style= "font-family: 'Georgia',Times,Times New Roman, serif; font-size: 20px; font-weight: 500; line-height: 35px;"  >My name is Joe Hurowitz. I've been a musician and school teacher for many years. I am currently teaching in Washington DC while attending the GW University Web Development Bootcamp. 
+           I hope one day to work for an educational organization or a non-profit who need a coder to help develop some great curriculum for the students of the world.<br>
+           Here are some of the subjects we covered over the course of 24 weeks: 
+            <i>Javascript,
+            jQuery,
+            Node.js,
+            Html,
+            CSS,
+            mySQL,
+            Sequelize,
+            express server,
+            GitHub ,
+            REACT Framework,
+            MongoDB, and 
+            ES6.</i>
+            <br>
+           Lastly I'd like to add that I'm the father of a wonderful 11 year old named Madeleine and I'm a creative musician and leader of a band called "The Mercy Alliance". <br> Click on the music link above to read more.
+
+           </p>
+          
+        </div>
+
+        </div>
+
+		</div>
+
+
+		<div class="col-md-4" style="padding:30px;">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title" style= "color:#798d8c;font-family: 'Georgia',Times,Times New Roman, serif; font-size: 30px; font-weight: 500; line-height: 50px;">Connect with Me</h2>
+            </div>
+            <div class="panel-body">
+            
+
+                 <a href="https://www.facebook.com/joe.rathbone.50"><img src="assets/images/social_media_circled_network-11-128.png" class="social" alt="FaceBook" /></a>
+                 <a href="https://twitter.com/mercy_alliance"><img src="assets/images/social_media_circled_network-06-128.png" class="social" alt="Twitter" /></a>
+                 <a href="https://www.linkedin.com/in/joe-hurowitz-00739baa?trk=nav_responsive_tab_profile"><img src="assets/images/social_media_network-18-128.png" class="social" alt="Linkdin" /></a>
+
+          </div>
+        </div>
+
+    </div>
+
+            <!-- The Modal -->
+          <div id="myModal" class="modal " >
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p style= "font-size: 20px; font-weight: 500; line-height: 35px;">In my free time, I'm the leader of <b>The Mercy Alliance</b>, an indie band based in Washington DC. <br>We've released 6 records since 2000 and we perform throughout the US. <br>
+                Our records have been played on radio stations nationwide and in the UK and our next release entitiled <b>"Dreamland"</b> is due out in the fall of 2017.
+                <br>
+                Here's a link to our most recent video : <a href="https://www.youtube.com/watch?v=b-N1Ps0ldYg"><b>Washington</b></a>
+                <br>
+                </p>
+
+                <img src="assets/images/TMALogo.png" class="social" alt="TMALogo" height= "300" width= "400">
+
+                </div>
+                
+             
+          </div>
+	</div>
+
+       <nav class="navbar navbar-default navbar-fixed-bottom" style="background: #666; color: #fff; border-top: 8px solid #798d8c; text-align: center;">
+
+      <div class="container" >
+          <strong><p text-align: center;>Copyright &copy; 2017 Joe Hurowitz</p></strong>
+        </div>
+      </nav>
+</div>
+
+ 
+      <script src="https://code.jquery.com/jquery.js"></script>
+       <script type="text/javascript" src="assets/index.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	</body>
+</html>
